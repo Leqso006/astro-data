@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Earth | Data Visualization</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-text">SYSTEM INITIALIZING...</div>
+        <div class="loader-bar"><div class="bar-fill"></div></div>
+    </div>
+
+    <!-- CRT Scanline Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Elements -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- THE BATTLEFIELD (Auto Ships) -->
+    <div id="battlefield"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">ASTRO<span class="highlight">DATA</span></div>
+        <ul>
+            <li><a href="#intro">Mission</a></li>
+            <li><a href="#data">Analytics</a></li>
+            <li><a href="#contact">Future</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="intro">
+        <!-- HUD Element -->
+        <div class="hud-display">
+            SYSTEM STATUS: <span class="blink-text">ONLINE</span><br>
+            TARGET: MARS COLONIZATION<br>
+            DATA STREAM: ACTIVE
+        </div>
+
+        <div class="hero-content">
+            <h1 class="glitch" data-text="THE NEW SPACE RACE">THE NEW SPACE RACE</h1>
+            <p class="subtitle">Analyzing Humanity's Next Giant Leap</p>
+            <div class="code-text">
+                /// INITIALIZING LAUNCH SEQUENCE ///
+            </div>
+            <a href="#data" class="btn-neon">Explore Data</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Data Section -->
+    <section id="data">
+        <div class="container">
+            <div class="section-title">
+                <h2>Orbital <span class="highlight">Dominance</span></h2>
+                <p>Who owns the sky? Visualizing launch statistics over the last decade.</p>
+            </div>
+
+            <!-- Visualization 1: Bar Chart Race -->
+            <div class="viz-card left">
+                <div class="viz-text">
+                    <h3>Launch Frequency <span class="badge">LIVE DATA</span></h3>
+                    <p>SpaceX has revolutionized the industry with reusable rockets. Observe the exponential growth compared to state agencies.</p>
+                    <p class="console-text">>> ANALYZING TRAJECTORY...</p>
+                </div>
+                <div class="viz-wrapper">
+                    <iframe src='https://flo.uri.sh/visualisation/26562161/embed' title='Interactive or visual content' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                </div>
+            </div>
+
+            <!-- Visualization 2: Line Chart -->
+            <div class="viz-card right">
+                <div class="viz-wrapper">
+                    <iframe src='https://flo.uri.sh/visualisation/26562379/embed' title='Interactive or visual content' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                </div>
+                <div class="viz-text">
+                    <h3>Cost to Orbit <span class="badge pink">ECONOMIC IMPACT</span></h3>
+                    <p>The price per kilogram to reach Low Earth Orbit has dropped drastically, making space accessible to private sectors.</p>
+                    <p class="console-text">>> CALCULATING EFFICIENCY...</p>
+                </div>
+            </div>
+
+<!-- Visualization 3: WebGL Globe -->
+             <div class="viz-card full-width">
+                <div class="viz-text-center">
+                    <h3>Satellite Density <span class="badge white">GLOBAL SCAN</span></h3>
+                    <p>Thousands of satellites now orbit Earth. Here is the current active distribution.</p>
+                </div>
+                
+                <div class="viz-wrapper-large">
+                    <!-- ADDED STYLE ATTRIBUTE HERE -->
+                    <iframe 
+                        src='https://flo.uri.sh/visualisation/26562421/embed' 
+                        title='Interactive or visual content' 
+                        style="width: 100%; height: 100%; min-height: 700px;" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+                    </iframe>
+                </div>
+            </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2 class="glitch" data-text="THE FUTURE IS NOW">THE FUTURE IS <span class="highlight">NOW</span></h2>
+        <div class="footer-code">TRANSMISSION ENDED ///</div>
+        <p class="footer-credits">Created by Leqso Sikmashvili, Liza Molashkhia, Mariam Gotsiridze</p>
+    </footer>
+
+    <!-- FIXED SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
